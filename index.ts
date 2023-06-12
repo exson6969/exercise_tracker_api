@@ -8,6 +8,7 @@ const planRoutes = require('./routes/planRoutes')
 // Initialize app
 const app = express()
 
+// Middleware for JSON request body parsing
 app.use(express.json());
 
 // Routes 
@@ -16,7 +17,6 @@ app.use('/exercise',exerciseRoutes)
 app.use('/log',logRoutes)
 app.use('/goal',goalRoutes)
 app.use('/plan',planRoutes)
-
 
 // Server
 app.listen(3000, ()=>{
