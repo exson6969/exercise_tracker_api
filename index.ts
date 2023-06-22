@@ -1,9 +1,9 @@
 const express = require('express');
-const authRoutes = require('./routes/authRoutes')
-const exerciseRoutes = require('./routes/exerciseRoutes')
-const logRoutes = require('./routes/logRoutes')
-const goalRoutes = require('./routes/goalRoutes')
-const planRoutes = require('./routes/planRoutes')
+const authRoutes = require('./routes/authRoutes.ts')
+// const exerciseRoutes = require('./routes/exerciseRoutes.ts')
+// const logRoutes = require('./routes/logRoutes.ts')
+// const goalRoutes = require('./routes/goalRoutes.ts')
+// const planRoutes = require('./routes/planRoutes.ts')
 
 // Initialize app
 const app = express()
@@ -13,10 +13,10 @@ app.use(express.json());
 
 // Routes 
 app.use('/auth', authRoutes);
-app.use('/exercise',exerciseRoutes)
-app.use('/log',logRoutes)
-app.use('/goal',goalRoutes)
-app.use('/plan',planRoutes)
+// app.use('/exercise',exerciseRoutes)
+// app.use('/log',logRoutes)
+// app.use('/goal',goalRoutes)
+// app.use('/plan',planRoutes)
 
 // Server
 app.listen(3000, ()=>{
